@@ -5,7 +5,8 @@ import 'package:adventOfCode2020/day1.dart' as day1;
 import 'package:adventOfCode2020/day2.dart';
 import 'package:adventOfCode2020/day3.dart';
 import 'package:adventOfCode2020/day4.dart';
-import 'package:adventOfCode2020/day5.dart'; 
+import 'package:adventOfCode2020/day5.dart';
+import 'package:adventOfCode2020/day6.dart'; 
 
 void main(List<String> arguments) {
   //Day 1
@@ -44,6 +45,13 @@ void main(List<String> arguments) {
   var mySeatId = day5_2('inputs/day5_1.txt');
   print('My seat Id: $mySeatId');
 
+
+  //Day6
+  var totalYesCount = day6_1('inputs/day6_1.txt');
+  print('Total yes count: $totalYesCount');
+
+  var everyoneInGroupYesCount = day6_2('inputs/day6_1.txt');
+  print('Everyone in group yes count: $everyoneInGroupYesCount');
 }
 
 void measureFunction(Function() f){
