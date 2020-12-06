@@ -1,6 +1,7 @@
 import 'package:adventOfCode2020/day1.dart';
 import 'package:adventOfCode2020/day2.dart';
 import 'package:adventOfCode2020/day4.dart';
+import 'package:adventOfCode2020/day5.dart';
 import 'package:test/test.dart';
 
 void main() {
@@ -44,5 +45,18 @@ void main() {
     expect(isValidPid('0123456789'), false);
     expect(isValidPid('123456789'), true);
     expect(isValidPid('12345678A'), false);
+  });
+
+
+  test('day 5 cals seatcode Row', (){
+    expect(calcRow('BFFFBBFRRR'), 70);
+    expect(calcRow('FFFBBBFRRR'), 14);
+    expect(calcRow('BBFFBBFRLL'), 102);
+  });
+
+  test('day 5 cals seatcode Seat', (){
+    expect(calcSeat('BFFFBBFRRR'), 7);
+    expect(calcSeat('FFFBBBFRRR'), 7);
+    expect(calcSeat('BBFFBBFRLL'), 4);
   });
 }

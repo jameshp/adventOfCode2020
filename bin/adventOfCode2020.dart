@@ -4,7 +4,8 @@ import 'dart:async';
 import 'package:adventOfCode2020/day1.dart' as day1;
 import 'package:adventOfCode2020/day2.dart';
 import 'package:adventOfCode2020/day3.dart';
-import 'package:adventOfCode2020/day4.dart'; 
+import 'package:adventOfCode2020/day4.dart';
+import 'package:adventOfCode2020/day5.dart'; 
 
 void main(List<String> arguments) {
   //Day 1
@@ -35,6 +36,13 @@ void main(List<String> arguments) {
 
   var validPassports2 = day4_2('inputs/day4_1.txt');
   print('Valid passports found: $validPassports2');
+
+  //Day 5
+  var highestSeatId = day5_1('inputs/day5_1.txt');
+  print('Highest seat Id: $highestSeatId');
+
+  var mySeatId = day5_2('inputs/day5_1.txt');
+  print('My seat Id: $mySeatId');
 
 }
 
