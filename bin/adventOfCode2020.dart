@@ -6,9 +6,12 @@ import 'package:adventOfCode2020/day2.dart';
 import 'package:adventOfCode2020/day3.dart';
 import 'package:adventOfCode2020/day4.dart';
 import 'package:adventOfCode2020/day5.dart';
-import 'package:adventOfCode2020/day6.dart'; 
+import 'package:adventOfCode2020/day6.dart';
+import 'package:adventOfCode2020/day7.dart'; 
 
 void main(List<String> arguments) {
+  var s = Stopwatch()..start();
+  
   //Day 1
   print('Day 1 solution:');
   measureFunction(day1.day1_1);
@@ -52,6 +55,17 @@ void main(List<String> arguments) {
 
   var everyoneInGroupYesCount = day6_2('inputs/day6_1.txt');
   print('Everyone in group yes count: $everyoneInGroupYesCount');
+
+  //Day7
+  var bagsWithAtLeastOnShinyGold = day7_1('inputs/day7_1.txt');
+  print('Bags with at least one shiny gold bag: $bagsWithAtLeastOnShinyGold');
+
+  
+  var bagsInShinyGoldBag = day7_2('inputs/day7_1.txt');
+  print('Bags in shiny gold bag: $bagsInShinyGoldBag');
+  
+  
+  print('All Days executed in ${s.elapsed}');
 }
 
 void measureFunction(Function() f){
