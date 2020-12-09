@@ -7,7 +7,8 @@ import 'package:adventOfCode2020/day3.dart';
 import 'package:adventOfCode2020/day4.dart';
 import 'package:adventOfCode2020/day5.dart';
 import 'package:adventOfCode2020/day6.dart';
-import 'package:adventOfCode2020/day7.dart'; 
+import 'package:adventOfCode2020/day7.dart';
+import 'package:adventOfCode2020/day8.dart'; 
 
 void main(List<String> arguments) {
   var s = Stopwatch()..start();
@@ -60,10 +61,14 @@ void main(List<String> arguments) {
   var bagsWithAtLeastOnShinyGold = day7_1('inputs/day7_1.txt');
   print('Bags with at least one shiny gold bag: $bagsWithAtLeastOnShinyGold');
 
-  
   var bagsInShinyGoldBag = day7_2('inputs/day7_1.txt');
   print('Bags in shiny gold bag: $bagsInShinyGoldBag');
-  
+
+  var accumulatorValue = day8_1('inputs/day8_1.txt');
+  print('Loop index detected: $accumulatorValue');
+
+  var accumulatorValueFinished = day8_2('inputs/day8_1.txt');
+  print('Finished index detected: $accumulatorValueFinished');
   
   print('All Days executed in ${s.elapsed}');
 }
