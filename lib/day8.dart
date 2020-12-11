@@ -115,7 +115,7 @@ class Program {
 
       if (visitedIndex.contains(instructionIndex)) {
         loopDetectedIndex = instructionIndex;
-        print('loop detected at $loopDetectedIndex');
+        //print('loop detected at $loopDetectedIndex');
         break;
       } else {
         visitedIndex.add(instructionIndex);

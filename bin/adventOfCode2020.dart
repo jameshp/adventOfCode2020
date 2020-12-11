@@ -8,7 +8,8 @@ import 'package:adventOfCode2020/day4.dart';
 import 'package:adventOfCode2020/day5.dart';
 import 'package:adventOfCode2020/day6.dart';
 import 'package:adventOfCode2020/day7.dart';
-import 'package:adventOfCode2020/day8.dart'; 
+import 'package:adventOfCode2020/day8.dart';
+import 'package:adventOfCode2020/day9.dart'; 
 
 void main(List<String> arguments) {
   var s = Stopwatch()..start();
@@ -64,12 +65,26 @@ void main(List<String> arguments) {
   var bagsInShinyGoldBag = day7_2('inputs/day7_1.txt');
   print('Bags in shiny gold bag: $bagsInShinyGoldBag');
 
+  //Day8
   var accumulatorValue = day8_1('inputs/day8_1.txt');
   print('Loop index detected: $accumulatorValue');
 
   var accumulatorValueFinished = day8_2('inputs/day8_1.txt');
   print('Finished index detected: $accumulatorValueFinished');
+
+  //Day9
+  var xmasWeakness = day9_1('inputs/day9_1.txt', 25);
+  print('No sum found for: $xmasWeakness');
   
+  //var xmasWeakness2_test = day9_2('inputs/day9_1_test.txt', 127); 
+  //print('Test Value for min max value sum is: $xmasWeakness2_test');
+  var xmasWeakness2 = day9_2('inputs/day9_1.txt', 88311122); //88311112 is reslut of day9_1
+  print('Value for min max value sum is: $xmasWeakness2');
+  
+  
+
+
+
   print('All Days executed in ${s.elapsed}');
 }
 
